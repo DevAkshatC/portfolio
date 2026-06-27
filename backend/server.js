@@ -16,6 +16,11 @@ const PORT = process.env.PORT || 5000
 app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:3000' }))
 app.use(express.json())
 
+// Root
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'Akshat Portfolio API', version: '1.0.0' })
+})
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Akshat Portfolio API running' })
@@ -67,6 +72,11 @@ app.post('/api/contact', async (req, res) => {
     console.error('Email error:', err.message)
     res.status(500).json({ error: 'Failed to send message' })
   }
+})
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({ error: `Route not found: ${req.method} ${req.path}` })
 })
 
 app.listen(PORT, () => {
