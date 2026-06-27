@@ -6,8 +6,8 @@ import { FaLocationDot } from 'react-icons/fa6'
 const contactLinks = [
   { icon: <FaEnvelope />, label: 'Email', value: 'akshsvt123@gmail.com', href: 'mailto:akshsvt123@gmail.com', color: '#7B2FFF' },
   { icon: <FaPhone />, label: 'Phone', value: '+91-9936382927', href: 'tel:+919936382927', color: '#00D4FF' },
-  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'Connect with me', href: 'https://linkedin.com', color: '#0077B5' },
-  { icon: <FaGithub />, label: 'GitHub', value: 'View my code', href: 'https://github.com', color: '#C084FC' },
+  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'Connect with me', href: 'https://linkedin.com/in/akshhatsrivastava', color: '#0077B5' },
+  { icon: <FaGithub />, label: 'GitHub', value: 'View my code', href: 'https://github.com/devakshatc', color: '#C084FC' },
 ]
 
 const Contact = () => {

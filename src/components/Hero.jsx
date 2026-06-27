@@ -223,8 +223,8 @@ const Hero = () => {
             </button>
             <div className="flex items-center gap-2 ml-1">
               {[
-                { icon: <FaGithub />, href: 'https://github.com/akshatsriv', label: 'GitHub' },
-                { icon: <FaLinkedin />, href: 'https://linkedin.com/in/akshat-srivastava', label: 'LinkedIn' },
+                { icon: <FaGithub />, href: 'https://github.com/devakshatc', label: 'GitHub' },
+                { icon: <FaLinkedin />, href: 'https://linkedin.com/in/akshhatsrivastava', label: 'LinkedIn' },
                 { icon: <FaEnvelope />, href: 'mailto:akshsvt123@gmail.com', label: 'Email' },
               ].map((s) => (
                 <a key={s.label} href={s.href} target="_blank" rel="noreferrer" title={s.label}
